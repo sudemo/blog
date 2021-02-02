@@ -88,7 +88,8 @@ DATABASES = {
         'NAME': 'myblog_db',  # 数据库名
         'USER': 'root',  # 账号
         'PASSWORD': 'root',  # 密码
-        'HOST': '127.0.0.1',  # HOST
+        # 'HOST': '127.0.0.1',  # HOST
+        'HOST': 'localhost',
         'POST': 3306,  # 端口
 
     }
