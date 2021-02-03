@@ -89,7 +89,8 @@ DATABASES = {
         'USER': 'root',  # 账号
         'PASSWORD': 'root',  # 密码
         # 'HOST': '127.0.0.1',  # HOST
-        'HOST': 'localhost',
+        # 'HOST': 'localhost',
+        'HOST': '172.16.5.71',
         'POST': 3306,  # 端口
 
     }

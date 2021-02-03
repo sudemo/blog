@@ -127,3 +127,4 @@ modules.xml
 *__pycache__/
 /cuiqingcai.com
 /osharpdemo1
+*.sqlite3
