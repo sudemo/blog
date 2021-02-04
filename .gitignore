@@ -128,3 +128,5 @@ modules.xml
 /cuiqingcai.com
 /osharpdemo1
 *.sqlite3
+*.zip
+/myhub_project/static/
