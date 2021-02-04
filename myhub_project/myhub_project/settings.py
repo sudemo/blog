@@ -89,6 +89,10 @@ DATABASES = {
         'USER': 'root',  # 账号
         'PASSWORD': 'root',  # 密码
         # 'HOST': '127.0.0.1',  # HOST
+<<<<<<< HEAD
+=======
+        # 'HOST': 'localhost',
+>>>>>>> 77b1e9e44bc838d3d246e5b2af7d24519bf5c61b
         'HOST': '172.16.5.71',
         'POST': 3306,  # 端口
 
@@ -133,8 +137,14 @@ USE_TZ = False
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+# STATIC_URL = '/static/'
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = 'static' ## 新增行
+STATICFILES_DIRS = [
+  os.path.join(BASE_DIR, '/static/'), ##修改地方
+]
 # 网站描述，用于SEO
 SITE_DESCRIPTION = "NEO的个人网站，记录生活的瞬间，分享学习的心得，感悟生活，留住感动"
 
