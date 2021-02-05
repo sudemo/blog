@@ -26,6 +26,9 @@ timeout = 60
 max_requests = 20000
 graceful_timeout = 60
 
+proc_name = "myblog"
+daemon =True
+
 loglevel = 'info'
 
 reload = True
