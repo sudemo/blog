@@ -44,13 +44,13 @@ class Post(models.Model):
 
     page_views = models.PositiveIntegerField(default=0, editable=False)
 
-    def increase_views(self):
-        self.page_views += 1
-        self.save(update_fields=['page_views'])
+
     class Meta:
         verbose_name = '文章'
         verbose_name_plural = verbose_name
-
+    def increase_views(self):
+        self.page_views += 1
+        self.save(update_fields=['page_views'])
     # def save(self, *args, **kwargs):
     #     self.modified_time = timezone.now()
     #     super().save(*args, **kwargs)
