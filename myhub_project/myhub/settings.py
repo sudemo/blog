@@ -26,7 +26,7 @@ SECRET_KEY = 'wk(r7=(5mj!9b72))4hg=k-y(d5zg(47dad$hv)1!sttiucdkk'
 DEBUG = False
 # DEBUG = False
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost ', '.wicp.vip']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', '.wicp.vip']
 
 # Application definition
 
@@ -90,7 +90,8 @@ DATABASES = {
         'PASSWORD': 'root',  # 密码
         # 'HOST': '127.0.0.1',  # HOST
         # 'HOST': 'localhost',
-        'HOST': '172.16.5.71',
+        # 'HOST': '172.16.5.71',
+        'HOST': '192.168.0.101',
         'POST': 3306,  # 端口
 
     }
