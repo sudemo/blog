@@ -42,6 +42,11 @@ class Post(models.Model):
     tags = models.ManyToManyField(Tag, verbose_name='标签', blank=True)
     author = models.ForeignKey(User, verbose_name='作者', on_delete=models.CASCADE)
 
+    page_views = models.PositiveIntegerField(default=0, editable=False)
+
+    def increase_views(self):
+        self.page_views += 1
+        self.save(update_fields=['page_views'])
     class Meta:
         verbose_name = '文章'
         verbose_name_plural = verbose_name
