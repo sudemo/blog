@@ -5,6 +5,7 @@ from django.shortcuts import render
 from django.views import generic
 from django.shortcuts import get_object_or_404, get_list_or_404
 from .models import  Category, Tag,Post
+from .visit_history import change_info
 
 
 
@@ -15,6 +16,7 @@ def index(request):
     # })
     post_list = Post.objects.all().order_by('-created_time')
     # print(post_list)
+    change_info(request, '/')
     return render(request, 'myblog/index.html', context={'post_list': post_list})
 
 
@@ -31,7 +33,7 @@ def index(request):
 
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
-
+    change_info(request, '/')
     post.increase_views()
     md = markdown.Markdown(extensions=[
         'markdown.extensions.extra',
