@@ -24,9 +24,9 @@ SECRET_KEY = 'wk(r7=(5mj!9b72))4hg=k-y(d5zg(47dad$hv)1!sttiucdkk'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-# DEBUG = False
+# DEBUG = True
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['121.5.79.160', '127.0.0.1', 'localhost', '.wicp.vip']
+ALLOWED_HOSTS = ['121.5.79.160','172.16.5.29', '127.0.0.1', 'localhost', '.wicp.vip']
 
 # Application definition
 

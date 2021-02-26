@@ -15,7 +15,8 @@ def ip_to_addr(ip):
     province = 省
     city = 城市
     """
-    reader = geoip2.database.Reader('blog/GeoLite2-City.mmdb')
+    reader = geoip2.database.Reader('myblog/GeoLite2-City.mmdb')
+    # print(reader)
     response = reader.city(ip)
     #print(response)
     # 因为有些IP的省份和城市未知，所以设置默认为空
