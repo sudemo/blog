@@ -26,7 +26,7 @@ SECRET_KEY = 'wk(r7=(5mj!9b72))4hg=k-y(d5zg(47dad$hv)1!sttiucdkk'
 DEBUG = False
 # DEBUG = True
 # ALLOWED_HOSTS = ['*']
-ALLOWED_HOSTS = ['121.5.79.160','172.16.5.29', '127.0.0.1', 'localhost', '.wicp.vip']
+ALLOWED_HOSTS = ['120.25.197.250'，'121.5.79.160','172.16.5.29', '127.0.0.1', 'localhost', '.wicp.vip']
 
 # Application definition
 
@@ -86,11 +86,11 @@ DATABASES = {
     'default': {
          'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
         'NAME': 'myblog_db',  # 数据库名
-        'USER': 'root',  # 账号
+        'USER': 'admin',  # 账号
         'PASSWORD': 'root',  # 密码
-        # 'HOST': '127.0.0.1',  # HOST
+        'HOST': '127.0.0.1',  # HOST
         # 'HOST': 'localhost',
-        'HOST': '172.16.5.29',
+        #'HOST': '172.16.5.29',
         #'HOST': '192.168.0.101',
         'POST': 3306,  # 端口
 
