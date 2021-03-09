@@ -18,7 +18,7 @@ sys.path.insert(0, path_of_current_dir)
 # worker_class = 'gevent' #使用gevent模式，还可以使用sync 模式，默认的是sync模式
 worker_class = 'sync'
 # workers = multiprocessing.cpu_count() * 2 + 1
-workers = 10
+workers = 2
 chdir = path_of_current_dir
 
 worker_connections = 1000

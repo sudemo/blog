@@ -16,9 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
-from django.views import static ##新增
-from django.conf import settings ##新增
-from django.conf.urls import url ##
+from django.views import static  # 新增
+from django.conf import settings  # 新增
+from django.conf.urls import url
 
 
 urlpatterns = [
