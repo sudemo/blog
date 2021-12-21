@@ -147,3 +147,9 @@ SITE_DESCRIPTION = "NEO的个人网站，记录生活的瞬间，分享学习的
 
 # 网站关键词，用于SEO
 SITE_KEYWORDS = "NEO,网络,IT,技术,博客,Python"
+
+SECURE_CONTENT_TYPE_NOSNIFF = False
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+# DENY ：表示该页面不允许在 frame 中展示，即便是在相同域名的页面中嵌套也不允许
+# SAMEORIGIN ：表示该页面可以在相同域名页面的 frame 中展示
+# ALLOW-FROM uri ：表示该页面可以在指定来源的 frame 中展示

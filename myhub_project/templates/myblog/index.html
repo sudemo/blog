@@ -25,16 +25,28 @@
     <script src="{% static 'blog/js/bootstrap.min.js' %}"></script>
     <script src="{% static 'blog/js/pace.min.js' %}"></script>
     <script src="{% static 'blog/js/modernizr.custom.js' %}"></script>
+    <style type="text/css">
+    button{
+    width:1000px;
+    height: 1000px;
+    background-color: palevioletred;
+    }
+    </style>
 </head>
 
 <body>
+<!--<a href="https://www.baidu.com/">-->
+<!--    <button>点我跳转到度娘！</button>-->
+<!--</a>-->
 <div class="container">
     <header id="site-header">
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
                     <h1><a href="index.html"><b>Black</b> &amp; White</a></h1>
+
                 </div>
+
             </div><!-- col-md-4 -->
             <div class="col-md-8 col-sm-7 col-xs-4">
                 <nav class="main-nav" role="navigation">
@@ -46,6 +58,7 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
+
                             <li class="cl-effect-11"><a href="index.html" data-hover="首页">首页</a></li>
                             <li class="cl-effect-11"><a href="full-width.html" data-hover="博客">博客</a></li>
                             <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
@@ -72,6 +85,7 @@
     <div class="container">
         <div class="row">
             <main class="col-md-8">
+
 {% block main %}
                 {% for post in post_list %}
                 <article class="post post-{{ post.pk }}">

@@ -44,3 +44,6 @@ def detail(request, pk):
     post.toc = md.toc
 
     return render(request, 'myblog/detail.html', context={'post': post})
+
+def tp(request):
+    return render(request, 'myblog/indexLv.html')
