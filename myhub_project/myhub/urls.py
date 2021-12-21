@@ -25,7 +25,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # url('', include(('myblog.urls','myblog'), namespace='blog')),
     path('', include(('myblog.urls','myblog'),namespace='blog')),
-    path('', include('comments.urls')),
+    path('', include('comments.urls')), # 注释掉后 无法查看详情
     url(r'^static/(?P<path>.*)$', static.serve,
         {'document_root': settings.STATIC_ROOT}, name='static'),
 ]
