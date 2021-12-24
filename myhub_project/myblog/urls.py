@@ -18,6 +18,6 @@ app_name = 'blog'
 urlpatterns = [
     path('', views.index, name='index'),
     path('posts/<int:pk>/', views.detail, name='detail'),
-    path('indexLv/', views.tp, name='index2'),
+    path('love/', views.tp, name='index2'),
 
 ]
